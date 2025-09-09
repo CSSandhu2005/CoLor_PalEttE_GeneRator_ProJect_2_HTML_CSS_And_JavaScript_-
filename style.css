@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #85a9de, #8e98a8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  position: relative;
+  align-self: center;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 3px;
+  background-color: #707ed6;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 750px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.178);
+  gap: 15px;
+}
+
+button {
+  align-self: flex-start;
+  padding: 11px 15px;
+  font-weight: 700;
+  border-radius: 25px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #6a75df, #7051a8);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.205);
+}
+
+button:active {
+  transform: translateY(0px);
+}
+
+#loop {
+  margin-right: 2px;
+}
+
+.colors-container {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.color-box {
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: red;
+  transition: transform 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.color-box:hover {
+  transform: translateY(-5px);
+}
+
+.color-info {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem;
+  transition: color 0.3s;
+}
+
+#hex-value {
+  letter-spacing: 0.5px;
+}
+
+#copy-button {
+  color: #64748b;
+}
+
+#copy-button:hover {
+  color: #7051a8;
+}
+
