@@ -91,7 +91,6 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background-color: red;
   transition: transform 0.3s;
   cursor: pointer;
   position: relative;
@@ -109,7 +108,6 @@ button:active {
   align-items: center;
   justify-content: space-between;
   padding: 0.4rem;
-  transition: color 0.3s;
 }
 
 #hex-value {
@@ -118,6 +116,7 @@ button:active {
 
 #copy-button {
   color: #64748b;
+  transition : color 0.7s ease ; 
 }
 
 #copy-button:hover {

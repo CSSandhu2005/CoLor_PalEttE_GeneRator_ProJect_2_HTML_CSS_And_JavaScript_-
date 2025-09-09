@@ -62,6 +62,6 @@ const iconChange = (e) => {
 
   setTimeout(() => {
     e.classList.add("ri-file-copy-fill");
-    e.style.color = "#64748b";
+    e.style.color = "";
   }, 1500);
 };
